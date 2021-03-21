@@ -68,4 +68,4 @@ async def prefix(ctx, prefix):
 
     await ctx.send(f'The prefix was changed to {prefix}')
 
-bot.run('Njc2ODUyMDg1OTY2NTAzOTY4.XkLtoA.N2XFg7oeDw2KTJ-7zbJnMxf5NJ0')
+bot.run('Token')
