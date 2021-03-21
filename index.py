@@ -68,4 +68,7 @@ async def prefix(ctx, prefix):
 
     await ctx.send(f'The prefix was changed to {prefix}')
 
-bot.run('Token')
+with open ("token.txt", "r") as f:
+    token = f.read()
+
+bot.run(token)
