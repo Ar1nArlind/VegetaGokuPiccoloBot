@@ -10,10 +10,6 @@ class Fun(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
 
-    @commands.command()
-    async def nigga(self, ctx):
-        await ctx.reply('nigga', mention_author=False)
-
     @commands.command(pass_context = True)
     async def swag(self, ctx):
         text = str(random.randint(0, 100)) 
@@ -74,23 +70,6 @@ class Fun(commands.Cog):
             )
             mbed.set_image(url=f"{ctx.author.avatar_url}")
             await ctx.reply(embed=mbed, mention_author=False)
-
-    def osu_keknigga(ctx):
-        return ctx.guild.id == 820324203508269127
-
-    @commands.command()
-    @commands.check(osu_keknigga)
-    async def gay(self, ctx):
-        responses = ['twinh',
-                     'Treuil',
-                     'MQHX',
-                     'Shadow',
-                     'Tin',
-                     'YouTu',
-                     'Arlind',
-                     'WalidESpagnol',
-                    ]
-        await ctx.reply(f'{random.choice(responses)} is gay', mention_author=False)
 
     @commands.command()
     async def ping(self, ctx):
